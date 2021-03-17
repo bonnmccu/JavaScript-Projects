@@ -70,7 +70,6 @@ function checkWinConditions()
     else if (selectedSquares.length >= 9) {
         audio('./media/tie.mp3');
         setTimeout(function () { resetGame(); }, 1000);
-    }
 }
 function arrayIncludes(squareA, squareB, squareC) 
     {
@@ -79,12 +78,18 @@ function arrayIncludes(squareA, squareB, squareC)
     const c = selectedSquares.includes(squareC)
     if (a === true && b === true && c === true) {return true}
     }
+}
 
-function disableClick ()
-    {
-     body.style.pointerEvents = 'none';
-     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000)
+    function resetGame()
+    { 
+        for (let i=0; i < 9; i++)
+        { 
+            let square = document.getElementById(String(i))
+            square.style.backgroundImage = ''
+        }
+        selectedSquares = [];
     }
+
 function audio(audioURL) 
 { 
     let audio = new Audio(audioURL);
@@ -101,8 +106,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2)
         y2 =coordY2, 
         x = x1,
         y = y1;
-}
-
+        
 function animateLineDrawing() //this sect interacts w canvas
 { 
     const animationLoop = requestAnimationFrame(animateLineDrawing);
@@ -133,16 +137,12 @@ function clear() //this clears the canvas after winline is drawn.
     cancelAnimationFrame(animationLoop);
 }
 disableClick();
-audio('./media/win/game.mp3');
+audio('./media/winGame.mp3');
 animateLineDrawing();
 setTimeout(function () { clear(); resetGame(); }, 1000);
-
-function resetGame()
-{ 
-    for (let i=0; i<9; i++)
-    { 
-        let square = document.getElementById (String(i))
-        square.style.backgroundImage=''
-    }
-    selectedSquares = [];
 }
+function disableClick ()
+    {
+     body.style.pointerEvents = 'none';
+     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000)
+    }
