@@ -1,0 +1,79 @@
+body{ 
+    background-color: moccasin;
+  
+}
+
+h1{
+    color: seagreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+h3{
+    color:blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+#menuBG { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:whitesmoke;
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  #fa4812;
+    width: 600px;
+    height: 200px;
+}
+#totalPrice {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:yellow;
+    width: 200px;
+    height: 190px;
+    margin: 20px auto;
+    float:right;
+}
+.left {
+    width: 200px;
+    height: 200px;      
+    float:left;
+}
+.center {
+    width: 200px;
+    height: 200px;      
+    float:left;
+}
+    
+.right {
+    width: 200px;
+    height: 200px;
+    float:right;
+}
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float:left;
+}
+#cart {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 900;
+    top:0;margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+#btnOrder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: tomato;
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height:40;
+    display: block;
+ 
+
+}
