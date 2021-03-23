@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+		<title>One Page Project</title>
+			<meta charset="utf-8">
+				<link rel = "stylesheet" href= "./css/one_page_test.css">               
+                <script src = "JS/one_page_test.js"></script>
+		
+		</head>
+<body>
+	<h1>THE PIGGY BANK BOSS</h1>
+		
+<!--nav-->
+<div class ="wrap">
+	<div class ="menu-container">
+    <div class ="text-center">
+		<ul>
+		<a href="home" id="link"<li>HOME</li></a>
+		<a href="gallery"<li>GALLERY</li></a>
+		<a href="contact" id="link"<li>CONTACT</li></a>
+		</ul>
+	</div>
+</div>
+<!-- end nav-->
+	<!--HOME-->
+<div id ="home">
+	<div class ="container">                                                                                                                                                                                       
+		<div class ="text-center">
+			<span>THE PIGGY BANK BOSS</span>
+			</div>
+		</div>
+	</div>
+	<!--------END--------------->
+
+	<!-- END HOME-->	
+	<!--GALLERY-->	
+		<section>	
+		<div id="gallery">
+			<h1>GALLERY</h1>
+			<div>
+
+            <div class="row">
+              <div class="column">
+                <img src="Thumbnail\Thumb\thumbnail_1-1pg.jpg"" style="width:95%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="Thumbnail\Thumb\thumbnail_2-1pg.jpg" style="width:95%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="Thumbnail\Thumb\thumbnail_3-1pg.jpg" style="width:95%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="Thumbnail\Thumb\thumbnail_4-1pg.jpg" style="width:95%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+            
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="Thumbnail\Thumb\thumbnail_1-1pg.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="Thumbnail\Thumb\thumbnail_2-1pg.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="Thumbnail\Thumb\thumbnail_3-1pg.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="Thumbnail\Thumb\thumbnail_4-1pg.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+            
+            
+                <div class="column">
+                  <img class="demo cursor" src="Thumbnail\Thumb\thumbnail_1-1pg.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bring on the Bling!">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Thumbnail\Thumb\thumbnail_2-1pg.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bows & Butterflies">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Thumbnail\Thumb\thumbnail_3-1pg.jpg" style="width:100%" onclick="currentSlide(3)" alt="I See Your Stash">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Thumbnail\Thumb\thumbnail_4-1pg.jpg" style="width:100%" onclick="currentSlide(4)" alt="Tutu Much Money">
+                </div>
+              </div>
+            </div>
+            
+
+<!--Order Information-->
+	<section>
+		<div id="order">
+			<div>
+		<h1><span>Save for that Special Occasion!</span><br />Start A Unique Collection</h1>
+	<p>PLEASE PLACE ORDER HERE</p>
+			</div>
+			<div class = form "order">
+	 		<form action="" method="post">
+		
+	<input class ="order" type="text" value="First Name">
+	<input class ="order" type="text" value="Last Name">
+    <input class ="order" type="text" value="Email">
+	<input class ="order" type="text" value="Credit Card">
+
+	<div class ="form-spacer">
+
+		<label class ="terms">Terms and Conditions</label>
+			</div>
+		<input value ="SUBMIT" value="Submit">
+		</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+	<!--END order form-->
+	<!--FOOTER -->
+		<div>
+		 www.thepiggybankboss.com&nbsp;&nbsp;&copy; 2021
+		</div>
+	<!--END FOOTER-->
+		
+</body>		
+</html>
